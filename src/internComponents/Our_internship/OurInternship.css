@@ -1,0 +1,25 @@
+
+.Our_internship{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+
+.Our_I_container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    
+}
+
+.OI_title{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}

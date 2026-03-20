@@ -1,0 +1,84 @@
+
+.Internship-container{
+    width: 400px;
+    height: auto;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 15px 60px 15px;
+    box-shadow: 1px 1px 15px rgba(0,0,0,0.2);
+}
+
+
+.custom-image {
+  width: 100px;
+  height: 100px;
+  margin-top: 50px;
+  border-radius: 50%; /* Makes the image round */
+  box-shadow: 3px 3px 5px #888888; /* Adds a drop shadow */
+  /* You can add more styles here as needed */
+  animation: moveUpDown 3s linear infinite;
+}
+
+  .intern-des{
+    margin-top: 50px;
+  }
+
+  .styled-button {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    background-color: #0074d9; /* Change the background color to your preference */
+    color: #fff; /* Text color */
+    border: none;
+    padding: 10px 80px; /* Adjust padding as needed for button size */
+    border-radius: 10px; /* Rounded corners */
+    cursor: pointer;
+    font-size: 16px; /* Adjust font size as needed */
+    /* Add any other styles you want */
+  }
+  
+  .styled-button:hover {
+    background-color: #0056b3; /* Change the background color on hover */
+    /* Add any other hover styles you want */
+  }
+  
+  @media screen and (max-width:400px){
+    .Internship-container{
+      margin: 10px 5px;
+      width: 100%;
+      padding: 10px;
+    }
+
+    .custom-image {
+      margin-top: 30px;
+      
+    }
+
+    .intern-des{
+      margin-top: 30px;
+    }
+
+    .inten-btn{
+      width: 100%;
+    }
+    .styled-button {
+      margin-top: 20px;
+      width: 100%;
+    }
+  }
+
+  @keyframes moveUpDown {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-15px); /* Adjust the value to control the amount of movement */
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }

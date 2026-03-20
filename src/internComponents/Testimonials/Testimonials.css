@@ -1,0 +1,53 @@
+.Testimonials{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    /* justify-content: space-between; */
+    
+    
+}
+
+  .underline {
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px; /* Start with a width of 0 */
+    height: 4px;
+    background-color: #6844ca;
+    transition: all 0.3s ease-in-out; /* Add a transition for smooth effect */
+  }
+  
+  /* Add a hover effect to increase the width on hover */
+  .testi-title:hover div {
+    width: 150px; /* Increase width to 100% on hover */
+    background-color: rgb(254,192,71);
+    
+}
+
+
+/* mobile responsive */
+@media screen and (min-width: 601px) and (max-width: 1400px) {
+  .Testimonials{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+  }
+
+  
+}
+
+@media screen and (max-width:600px) {
+  .Testimonials{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+
+  
+}
+

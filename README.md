@@ -4,7 +4,7 @@ Welcome to the Digital Marketing Website Template repository! This project is a 
 
 ## Table of Contents
 
-- [Digital Marketing Website Template](#digital-marketing-website-template)
+- [Digital Marketing Website Template](#digital-cybrsfer-template)
   - [Table of Contents](#table-of-contents)
   - [Features](#features)
   - [Technologies Used](#technologies-used)
@@ -36,20 +36,29 @@ Welcome to the Digital Marketing Website Template repository! This project is a 
 To get a local copy up & running, follow these simple steps:
 
 1. **Clone the repository:**
+
    ```sh
-   git clone https://github.com/KumarRahul01/Marketing-Website.git
+   git clone https://github.com/KumarRahul01/Cybrsfer.git
+
+   ```
 
 2. **Navigate to the project directory:**
-    ```sh
-    cd digital-marketing-website
-  
+
+   ```sh
+   cd digital-cybrsfer
+
+   ```
+
 3. **Install dependencies:**
+
    ```sh
    npm install
+
+   ```
 
 4. **To run:**
    ```sh
    npm run dev
+   ```
 
-Open your browser and go to http://localhost:5173/Marketing-Website/ to see the website in action.
-
+Open your browser and go to http://localhost:5173/Cybrsfer/ to see the website in action.

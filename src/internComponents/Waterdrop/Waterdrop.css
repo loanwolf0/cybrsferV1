@@ -1,0 +1,202 @@
+.main-water {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 70px;
+}
+
+.internContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 30px;
+  padding: 50px 0;
+  height: auto;
+  place-items: center; /* Center the items horizontally */
+}
+
+.internContainer .drop .content p {
+  font-size: 14px;
+}
+
+@media (min-width: 400px) {
+  .internContainer {
+    /* height: 700px; */
+    place-items: center;
+    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+  }
+  .internContainer .drop {
+    width: 90%;
+    height: auto;
+    padding: 10px;
+  }
+  .internContainer .drop .content {
+    padding: 40px;
+  }
+}
+
+@media (min-width: 700px) {
+  .internContainer {
+    grid-template-columns: repeat(auto-fill, minmax(48%, 1fr));
+  }
+  .internContainer .drop {
+    width: 90%;
+    height: auto;
+    padding: 10px;
+  }
+  .internContainer .drop .content {
+    padding: 40px;
+  }
+}
+
+@media (min-width: 1100px) {
+  .internContainer {
+    grid-template-columns: repeat(auto-fill, minmax(48%, 1fr));
+  }
+  .internContainer .drop {
+    width: 450px;
+    height: auto;
+    padding: 20px;
+  }
+  .internContainer .drop .content {
+    padding: 40px;
+  }
+}
+
+@media (min-width: 1250px) {
+  .internContainer {
+    grid-template-columns: repeat(auto-fill, minmax(48%, 1fr));
+  }
+  .internContainer .drop {
+    width: 500px;
+    padding: 20px;
+  }
+  .internContainer .drop .content {
+    padding: 40px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .internContainer {
+    grid-template-columns: repeat(3, minmax(30%, 1fr));
+  }
+  .internContainer .drop {
+    width: 400px;
+    padding: 30px;
+  }
+  .internContainer .drop .content {
+    padding: 40px;
+  }
+}
+
+.internContainer .drop {
+  position: relative;
+  /* height: 100%; */
+  box-shadow:
+    inset 20px 20px 20px rgba(0, 0, 0, 0.05),
+    25px 35px 20px rgba(0, 0, 0, 0.05),
+    25px 30px 30px rgba(0, 0, 0, 0.05),
+    inset -20px -20px 25px rgba(255, 255, 255, 0.9);
+  transition: 0.5s ease-in-out;
+  display: flex;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.internContainer .drop:nth-child(1) {
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+}
+.internContainer .drop:nth-child(2) {
+  border-radius: 18% 82% 41% 59% / 68% 63% 37% 32%;
+}
+.internContainer .drop:nth-child(3) {
+  border-radius: 46% 64% 91% 29% / 52% 42% 58% 68%;
+}
+
+.internContainer .drop:nth-child(1):hover {
+  border-radius: 18% 82% 41% 59% / 68% 63% 37% 32%;
+}
+.internContainer .drop:nth-child(2):hover {
+  border-radius: 36% 64% 71% 29% / 32% 42% 58% 68%;
+}
+.internContainer .drop:nth-child(3):hover {
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+}
+
+.internContainer .drop:hover {
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.internContainer .drop::before {
+  content: "";
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  top: 60px;
+  left: 90px;
+  background-color: rgba(0, 0, 0, 0.05);
+  opacity: 0.9;
+}
+
+.internContainer .drop::after {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  top: 95px;
+  left: 120px;
+  background-color: rgba(0, 0, 0, 0.05);
+  opacity: 0.9;
+}
+
+.internContainer .drop .content {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 30px;
+  gap: 15px;
+}
+
+.internContainer .drop .content h2 {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  background-color: #eff0f4;
+  border-radius: 50%;
+  box-shadow:
+    inset 2px 5px 10px rgba(0, 0, 0, 0.1),
+    inset -2px -5px 10px rgba(255, 255, 255, 1),
+    15px 15px 10px rgba(0, 0, 0, 0.05),
+    15px 10px 15px rgba(0, 0, 0, 0.025);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  color: var(--clr);
+}
+
+.internContainer .drop .content a {
+  position: relative;
+  padding: 10px 25px;
+  background-color: var(--clr);
+  text-decoration: none;
+  color: white;
+  border-radius: 25px;
+  font-weight: 500;
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
+  opacity: 0.9;
+  font-size: 16px;
+  transition: 0.5s;
+}
+
+.internContainer .drop .content a:hover {
+  cursor: pointer;
+  opacity: 1;
+}

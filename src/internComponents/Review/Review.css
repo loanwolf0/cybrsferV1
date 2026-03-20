@@ -1,0 +1,80 @@
+
+.review-card {
+    width: 32%;
+    height: auto;
+    padding: 20px;
+    border-radius: 20px;
+    background: linear-gradient(to bottom right, #8254ea, #00b0ff);
+    color: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.5s ease-in-out, background-color 0.5s ease-in-out; /* Apply transition to transform and background-color */
+    transform-style: preserve-3d;
+    transform: perspective(1000px) rotateX(0deg) rotateY(0deg);
+  }
+
+  .review-card p{
+    color: white;
+    transition: all 0.5s;
+  }
+  
+  .review-card:hover {
+    transform: perspective(1000px) rotateX(15deg) rotateY(-15deg);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(to top left, #ff6b6b, #f9cb40);
+  }
+  .review-card:hover p{
+    color: black;
+  }
+  
+  
+  .review-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .stars {
+    font-size: 24px;
+  }
+  
+  .star {
+    color: yellow;
+  }
+  
+  .star-half {
+    content: '\2605'; /* Unicode character for half star */
+    color: yellow;
+    position: absolute;
+    width: 50%;
+    overflow: hidden;
+  }
+  
+  .review-date {
+    font-size: 14px;
+  }
+  
+  .reviewer-name {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .reviewer-role {
+    font-size: 16px;
+    color: #ddd;
+    margin-bottom: 10px;
+  }
+  
+  .review-text {
+    font-size: 18px;
+  }
+  
+
+
+  @media screen and (max-width:700px) {
+    .review-card{
+      width: 90%;
+      
+    }
+}

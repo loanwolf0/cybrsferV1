@@ -5,73 +5,83 @@ import { HiOutlineChartPie } from "react-icons/hi2";
 // aos
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { useNavigate } from "react-router-dom";
 
 const Services = () => {
-  const navigate = useNavigate();
-
   useEffect(() => {
     AOS.init();
-  });
+  }, []);
 
-  // const clickHandler = () => {
-  //   navigate("app-development");
-  // };
   return (
     <div className="text-[#7A6960]">
+      {/* Heading */}
       <h1 data-aos="fade-down" className="text-3xl font-semibold text-center">
-        Services
+        Digital Marketing & Development Services
       </h1>
+
       <div className="flex justify-center items-center mt-2">
         <div className="bg-orange-600 h-1 w-16 rounded"></div>
       </div>
+
+      {/* Subheading */}
       <p className="text-gray-700 text-center mt-7 mb-10 text-lg">
-        Choose from live online courses, classroom training, or self-paced
-        online programs.
+        हम आपके business के लिए ज्यादा leads, traffic और sales के साथ-साथ
+        professional website, app और software भी बनाते हैं।
       </p>
+
+      {/* Cards */}
       <div
-        className="flex flex-col lg:flex-row items-center gap-5"
+        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-5"
         data-aos="fade-up"
       >
-        <div onClick={() => navigate("/app-development")}>
-          <Card
-            img={<HiOutlineChartPie />}
-            title={"Apps Development"}
-            desc={
-              "Lorem ipsum, dolor Adipisci ipsam placeat voluptatum fuga omnis tenetur facere!"
-            }
-          />
-        </div>
+        {/* SEO */}
+        <Card
+          img={<HiOutlineChartPie />}
+          title={"SEO (Google Ranking)"}
+          desc={
+            "आपकी वेबसाइट को Google के top पर लाकर organic traffic बढ़ाते हैं।"
+          }
+        />
 
-        <div onClick={() => navigate("/web-development")}>
-          <Card
-            img={<HiOutlineChartPie />}
-            title={"Web Development"}
-            desc={
-              "Lorem ipsum, dolor Adipisci ipsam placeat voluptatum fuga omnis tenetur facere!"
-            }
-          />
-        </div>
+        {/* Social Media */}
+        <Card
+          img={<HiOutlineChartPie />}
+          title={"Social Media Marketing"}
+          desc={
+            "Instagram और Facebook पर आपका brand grow करके audience बनाते हैं।"
+          }
+        />
 
-        <div onClick={() => navigate("/seo-optimization")}>
-          <Card
-            img={<HiOutlineChartPie />}
-            title={"Search Engine Optimization"}
-            desc={
-              "Lorem ipsum, dolor Adipisci ipsam placeat voluptatum fuga omnis tenetur facere!"
-            }
-          />
-        </div>
+        {/* Ads */}
+        <Card
+          img={<HiOutlineChartPie />}
+          title={"Paid Ads (Google & Meta)"}
+          desc={"High-converting ads चलाकर targeted leads और sales दिलाते हैं।"}
+        />
 
-        <div onClick={() => navigate("/campagin-creation")}>
-          <Card
-            img={<HiOutlineChartPie />}
-            title={"Campaign Creation"}
-            desc={
-              "Lorem ipsum, dolor Adipisci ipsam placeat voluptatum fuga omnis tenetur facere!"
-            }
-          />
-        </div>
+        {/* Lead Generation */}
+        <Card
+          img={<HiOutlineChartPie />}
+          title={"Lead Generation"}
+          desc={
+            "आपके business के लिए real customers generate करते हैं जो convert होते हैं।"
+          }
+        />
+
+        {/* Web Development */}
+        <Card
+          img={<HiOutlineChartPie />}
+          title={"Website Development"}
+          desc={
+            "हम आपके business के लिए fast, responsive और professional websites बनाते हैं।"
+          }
+        />
+
+        {/* App Development */}
+        <Card
+          img={<HiOutlineChartPie />}
+          title={"App Development"}
+          desc={"Android और web apps बनाकर आपके business को digital बनाते हैं।"}
+        />
       </div>
     </div>
   );

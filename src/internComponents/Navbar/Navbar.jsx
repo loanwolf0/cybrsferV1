@@ -34,7 +34,7 @@ const Navbar = () => {
         >
           <li className="relative" onClick={handleMobile}>
             <a
-              href="/Cybrsfer/"
+              href="/"
               className="text-[#7A6960] text-lg cursor-pointer custom-a"
             >
               Home

@@ -8,8 +8,8 @@ const Routings = () => {
   return (
     <div>
       <Routes>
-        <Route path="/cybrsfer" element={<Home />} />
-        <Route path="/cybrsfer/career" element={<InternHome />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/career" element={<InternHome />} />
       </Routes>
     </div>
   );

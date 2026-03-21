@@ -25,7 +25,7 @@ const Home = () => {
       <Waterdrop />
       <OurInternship />
       <AllReviws />
-      <ContactForm />
+      {/* <ContactForm /> */}
       <FAQ />
       <Footer />
     </div>

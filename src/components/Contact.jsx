@@ -85,8 +85,8 @@ const Contact = () => {
               <h2 className="lg:text-xl text-[#7A6960] font-semibold">
                 Call Us
               </h2>
-              <p className="text-sm text-slate-800">+99 7080445746 </p>
-              <p className="text-sm text-slate-800">+99 7068244344 </p>
+              <p className="text-sm text-slate-800">+91 7080445746 </p>
+              <p className="text-sm text-slate-800">+91 7068244344 </p>
             </div>
           </div>
 

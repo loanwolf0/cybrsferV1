@@ -90,7 +90,7 @@ const NavBar = () => {
             Contact
           </a>
           <a
-            href="/#career"
+            href="/career"
             className="text-gray-800 hover:text-[#EE7540] text-lg tracking-wide font-light"
           >
             Career
